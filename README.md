@@ -15,4 +15,4 @@ python setup.py install
 >>> z = ~a & ~b & c & d | b & c & d | a & b & ~c | a & ~b & c & d
 >>> obj = qm.QuineMcCluskey(z)
 >>> obj.compute()
-c & d | a & b & ~c
+c & d | (a & b) & ~c
